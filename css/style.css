@@ -2,3 +2,34 @@
 body {
     font-family: Arial, sans-serif;
 }
+
+.btn {
+    border-radius: 1.5rem;
+}
+
+
+/* HERO SECTION  */
+.hero {
+    height: 80vh;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+}
+.hero__returnal {
+    background-image: url(../img/returnal-listing-thumb-01-ps5.jpg);
+}
+.hero__ratchet {
+    background-image: url(../img/ratchet-and-clank-rift-apart-keyart.jpg);
+}
+.hero__logo {
+    width: 60%;
+}
+
+
+/* CARUSEL */
+
+.carusel__img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
