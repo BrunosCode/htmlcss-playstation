@@ -7,6 +7,11 @@ body {
     border-radius: 1.5rem;
 }
 
+.img {
+    width: 100%;
+    height: auto;
+}
+
 
 /* HERO SECTION  */
 .hero {
@@ -29,7 +34,12 @@ body {
 /* CARUSEL */
 
 .carusel__img {
-    width: 100%;
-    height: auto;
     border-radius: 1rem;
+}
+/* !!!!change in img--rounded!!!!!  */
+.carusel__option--traparent {
+    opacity: .8;
+}
+.carusel__option--traparent.active {
+    opacity: 1;
 }
