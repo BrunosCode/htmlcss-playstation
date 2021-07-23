@@ -18,6 +18,12 @@ body {
 .bg--gray {
     background-color: gray;
 }
+.bg--blue {
+    background-color: darkblue;
+}
+.bg--black {
+    background-color: black;
+}
 
 /* HERO SECTION  */
 .hero {
@@ -45,9 +51,6 @@ body {
 
 
 /* CARUSEL */
-.carusel--black {
-    background-color: black;
-}
 .carusel__option--trasparent {
     opacity: 0.6;
 }
