@@ -19,21 +19,149 @@
 </head>
 
 <body>
-    <!-- HEADER FIXED WITH NAVIGATION -->
-    <header class="header">
-        <div class="header__top"></div>
-        <div class="header__nav"></div>
+    <header class="c-header fixed-top">
+        <div class="c-header__top container-fluid h-bg--black text-end py-2">
+            <img class="c-header__logo" src="img/sony_logo.svg" alt="Sony">
+        </div>
+        <!-- HEADER FIXED WITH NAVIGATION -->
+        <div class="c-header__bottom">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/play_logo.svg" alt="Play logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Giochi
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Hardware
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Servizi
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Novità
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Fai acquisti
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Supporto
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav align-items-center mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    My PlayStation
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item ms-2">
+                                <button class="btn btn-dark">Accedi</button>
+                            </li>
+                            <li class="nav-item ms-2">
+                                <a href="#">
+                                    <img class="c-img--smallIcon" src="img/lens.svg" alt="Lens">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- /HEADER FIXED WITH NAVIGATION -->
     </header>
-    <!-- /HEADER FIXED WITH NAVIGATION -->
 
     <main>
         <!-- FIRST HERO -->
         <section id="firstHero">
-            <div class="c-hero c-hero__returnal">
+            <div class="c-hero c-hero__returnal c-hero--paddingTop">
                 <div class="container py-3 py-lg-5 text-white">
                     <div class="row align-items-end">
                         <div class="col-12 col-lg-5">
-                            <img src="img/returnal-hero-banner-logo.png" alt="Returnal Logo" class="c-img c-img--small pb-3">
+                            <img src="img/returnal-hero-banner-logo.png" alt="Returnal Logo"
+                                class="c-img c-img--small pb-3">
                             <h2 class="pb-3">Rompi il cerchio</h2>
                             <p class="pb-3">Rialzati dopo ogni sconfitta e affronta una nuova sfida con
                                 ogni rinascita in questo esplosivo thriller fantascentifico, disponibile per PS5.</p>
@@ -50,37 +178,43 @@
                     <div class="col-6 col-sm-4 col-lg-2">
                         <input id="returnal1" class="c-radio__input" type="radio" name="firstHeroSelection" checked>
                         <label for="returnal1" class="c-radio__label--borded">
-                            <img src="img/returnal-listing-thumb-01-ps5.jpg" alt="Returnal" class="c-img c-img--rounded">
+                            <img src="img/returnal-listing-thumb-01-ps5.jpg" alt="Returnal"
+                                class="c-img c-img--rounded">
                         </label>
                     </div>
                     <div class="col-6 col-sm-4 col-lg-2">
                         <input id="ratchet1" class="c-radio__input" type="radio" name="firstHeroSelection">
                         <label for="ratchet1" class="c-radio__label--borded">
-                            <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="Ratchet" class="c-img c-img--rounded">
+                            <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="Ratchet"
+                                class="c-img c-img--rounded">
                         </label>
                     </div>
                     <div class="col-6 col-sm-4 col-lg-2">
                         <input id="returnal2" class="c-radio__input" type="radio" name="firstHeroSelection">
                         <label for="returnal2" class="c-radio__label--borded">
-                            <img src="img/returnal-listing-thumb-01-ps5.jpg" alt="Returnal" class="c-img c-img--rounded">
+                            <img src="img/returnal-listing-thumb-01-ps5.jpg" alt="Returnal"
+                                class="c-img c-img--rounded">
                         </label>
                     </div>
                     <div class="col-6 col-sm-4 col-lg-2">
                         <input id="ratchet2" class="c-radio__input" type="radio" name="firstHeroSelection">
                         <label for="ratchet2" class="c-radio__label--borded">
-                            <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="Ratchet" class="c-img c-img--rounded">
+                            <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="Ratchet"
+                                class="c-img c-img--rounded">
                         </label>
                     </div>
                     <div class="col-6 col-sm-4 col-lg-2">
                         <input id="returnal3" class="c-radio__input" type="radio" name="firstHeroSelection">
                         <label for="returnal3" class="c-radio__label--borded">
-                            <img src="img/returnal-listing-thumb-01-ps5.jpg" alt="Returnal" class="c-img c-img--rounded">
+                            <img src="img/returnal-listing-thumb-01-ps5.jpg" alt="Returnal"
+                                class="c-img c-img--rounded">
                         </label>
                     </div>
                     <div class="col-6 col-sm-4 col-lg-2">
                         <input id="ratchet3" class="c-radio__input" type="radio" name="firstHeroSelection">
                         <label for="ratchet3" class="c-radio__label--borded">
-                            <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="Ratchet" class="c-img c-img--rounded">
+                            <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="Ratchet"
+                                class="c-img c-img--rounded">
                         </label>
                     </div>
                 </div>
@@ -91,12 +225,14 @@
         <!-- CALL TO ACTION SECTION, WITH RADIO SELECTION -->
         <section id="playstation5Products">
             <div class="container text-center py-3 py-lg-5">
-                <p class="c-preTitle text-primary text-uppercase mb-0">Play has no Limits</p>
-                <h2 class="c-title">Ecco la Playstation 5</h2>
-                <p class="c-description text-muted py-3">Tuffati in nuove possibilità di gioco completamente
-                    inaspettate</p>
-
                 <div class="c-cta row align-items-center">
+                    <div class="col-12">
+                        <p class="c-preTitle text-primary text-uppercase mb-0">Play has no Limits</p>
+                        <h2 class="c-title">Ecco la Playstation 5</h2>
+                        <p class="c-description text-muted py-3">Tuffati in nuove possibilità di gioco completamente
+                            inaspettate</p>
+                    </div>
+
                     <div class="c-cta__block col-12 col-md-6 text-start">
                         <h3 class="title">Console Playstation 5</h3>
                         <p class="description text-muted">Sperimenta la nuova generazione di incredibili giochi
@@ -107,17 +243,19 @@
                         <img src="img/playstation-5-thumb.png" alt="Playstation 5" class="c-img">
                     </div>
                 </div>
-            
+
                 <div class="c-radio row row-cols-3 row-cols-md-5 py-3 py-lg-5 gy-3 justify-content-between">
                     <div class="col">
-                        <input id="playstation5" class="c-radio__input" type="radio" name="ps5Accessories" value="playstation5"  checked>
+                        <input id="playstation5" class="c-radio__input" type="radio" name="ps5Accessories"
+                            value="playstation5" checked>
                         <label for="playstation5" class="c-radio__label--trasparent">
                             <img src="img/playstation-5-thumb.png" alt="Playstation 5" class="c-img c-img--small">
                             <p class="text-center pt-3 pt-lg-4">Console Playstation 5</p>
                         </label>
                     </div>
                     <div class="col">
-                        <input id="dualsense" class="c-radio__input" type="radio" name="ps5Accessories" value="dualsense">
+                        <input id="dualsense" class="c-radio__input" type="radio" name="ps5Accessories"
+                            value="dualsense">
                         <label for="dualsense" class="c-radio__label--trasparent col">
                             <img src="img/joypad-thumb.png" alt="DualSense" class="c-img c-img--small">
                             <p class="text-center pt-3 pt-lg-4">Controller wireless DualSense<sup>TM</sup></p>
@@ -168,12 +306,14 @@
         </section>
         <!-- /SECOND HERO SECTION-->
 
-            <!-- GRID OF CARD-->
+        <!-- GRID OF CARD-->
         <section id="newGames" class="h-bg--black">
             <div class="container p-4 text-white">
-                <h4>Nuove Uscite</h4>
-                <h5 class="pb-3">Giochi incredibili per PS4 e PS5 disponibili ora</h5>
                 <div class="row">
+                    <div class="col-12">
+                        <h4>Nuove Uscite</h4>
+                        <h5 class="pb-3">Giochi incredibili per PS4 e PS5 disponibili ora</h5>
+                    </div>
                     <div class="col-6 col-sm-4 col-lg-2 pb-3">
                         <a href="#">
                             <img src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="Tony Hawk's Pro Skater"
@@ -187,7 +327,7 @@
                                 class="c-img c-img--rounded pb-2">
                             <p>Crash Bandicoot: It's About Time</p>
                         </a>
-                    </div>  
+                    </div>
                     <div class="col-6 col-sm-4 col-lg-2 pb-3">
                         <a href="#">
                             <img src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="Tony Hawk's Pro Skater"
@@ -201,7 +341,7 @@
                                 class="c-img c-img--rounded pb-2">
                             <p>Crash Bandicoot: It's About Time</p>
                         </a>
-                    </div>  
+                    </div>
                     <div class="col-6 col-sm-4 col-lg-2 pb-3">
                         <a href="#">
                             <img src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="Tony Hawk's Pro Skater"
@@ -215,7 +355,7 @@
                                 class="c-img c-img--rounded pb-2">
                             <p>Crash Bandicoot: It's About Time</p>
                         </a>
-                    </div>  
+                    </div>
                     <div class="col-6 col-sm-4 col-lg-2 pb-3">
                         <a href="#">
                             <img src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="Tony Hawk's Pro Skater"
@@ -229,7 +369,7 @@
                                 class="c-img c-img--rounded pb-2">
                             <p>Crash Bandicoot: It's About Time</p>
                         </a>
-                    </div>  
+                    </div>
                     <div class="col-6 col-sm-4 col-lg-2 pb-3">
                         <a href="#">
                             <img src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="Tony Hawk's Pro Skater"
@@ -243,7 +383,7 @@
                                 class="c-img c-img--rounded pb-2">
                             <p>Crash Bandicoot: It's About Time</p>
                         </a>
-                    </div>  
+                    </div>
                     <div class="col-6 col-sm-4 col-lg-2 pb-3">
                         <a href="#">
                             <img src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="Tony Hawk's Pro Skater"
@@ -257,20 +397,22 @@
                                 class="c-img c-img--rounded pb-2">
                             <p>Crash Bandicoot: It's About Time</p>
                         </a>
-                    </div>  
+                    </div>
                 </div>
             </div>
         </section>
-            <!-- /RADIO SELECTION -->
+        <!-- /RADIO SELECTION -->
 
         <!-- CARDS SECTION  -->
         <section id="playstation4Products">
             <div class="container text-center py-3 py-lg-5">
-                <h3 class="c-title">Esplora Playstation4<sup>®</sup></h3>
-                <p class="c-description text-muted">Giochi incredibili e intrattenimento senza fine.<br> Non c'è
-                    mai stato un momento migliore per giocare alla tua PS4.</p>
-
                 <div class="row my-3 text-start">
+                    <div class="col-12">
+                        <h3 class="c-title">Esplora Playstation4<sup>®</sup></h3>
+                        <p class="c-description text-muted">Giochi incredibili e intrattenimento senza fine.<br> Non c'è
+                            mai stato un momento migliore per giocare alla tua PS4.</p>
+                    </div>
+
                     <div class="section__card col-12 col-md-4">
                         <img src="img/ps4-slim-homepage-image-block.jpg" alt="PS4 Slim" class="c-img">
                         <h4 class="c-title">Playstation 4</h4>
@@ -321,9 +463,11 @@
         <!-- CARDS SECTION  -->
         <section id="storeDiscounts">
             <div class="container text-center py-3 py-lg-5">
-                <h3 class="c-title">Nuovi sconti su Playstation store</h3>
-                <p class="c-description text-muted">Sconti pazzeschi, collezioni curate e saldi stagionali su
-                    PS5, PS4 e PS VR, tutti in unico posto.</p>
+                <div class="col-12">
+                    <h3 class="c-title">Nuovi sconti su Playstation store</h3>
+                    <p class="c-description text-muted">Sconti pazzeschi, collezioni curate e saldi stagionali su
+                        PS5, PS4 e PS VR, tutti in unico posto.</p>
+                </div>
 
                 <div class="row my-3 text-start gy-5">
                     <div class="col-12 col-md-4">
@@ -344,7 +488,6 @@
         <!-- CALL TO ACTION SECTION -->
         <section id="playstationNow" class="h-bg--blue text-white">
             <div class="container">
-                <div class="row">
                     <div class="c-cta row align-items-center">
                         <div class="c-cta__block col-12 col-md-6 text-start">
                             <img src="img/ps-now-logo-two-column.png" alt="Playstation Plus Logo"
@@ -359,7 +502,7 @@
                                 class="c-img">
                         </div>
                     </div>
-                </div>
+                
             </div>
         </section>
         <!-- /CALL TO ACTION SECTION -->
@@ -367,8 +510,10 @@
         <!-- SOCIAL LINKS SECTION  -->
         <section id="socialLinks">
             <div class="container text-center py-3 py-lg-5">
-                <h4 class="c-title py-3">Seguici sui Social</h4>
                 <div class="c-socialLinks row justify-content-center my-3 gy-5">
+                    <div class="col-12">
+                        <h4 class="c-title py-3">Seguici sui Social</h4>
+                    </div>
                     <div class="col-6 col-md-3 col-lg-2">
                         <a href="#" class="c-socialLinks__link">
                             <img src="img/twitter.jpg" alt="Twitter" class="c-img">
@@ -399,8 +544,9 @@
         <div class="container text-white py-3 py-lg-5">
             <div class="row">
                 <div class="c-footer__block col-12 col-lg-6 align-self-center my-3 my-lg-5"">
-                    <img class="c-img--logo pb-3" src="img/ps-footer.svg" alt="Playstation Logo">
-                    <p><img class="c-img--smallIcon" src="img/language-globe.svg" alt="Globe"> Country / Region: Italy</p>
+                    <img class=" c-img--logo pb-3" src="img/ps-footer.svg" alt="Playstation Logo">
+                    <p><img class="c-img--smallIcon" src="img/language-globe.svg" alt="Globe"> Country / Region: Italy
+                    </p>
 
                 </div>
                 <nav class="c-footer__col col-12 col-sm-4 col-lg-2">
@@ -430,7 +576,9 @@
                 </nav>
                 <div class="footer__block col-12 col-lg-6 align-self-center my-3 my-lg-5">
                     <img class="c-img--logo pb-3" src="img/sie-logo.svg" alt="Sony Logo">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi dolorem iste quia quidem eligendi eveniet impedit ducimus deleniti aperiam architecto similique veniam corporis, minus harum dolore praesentium repellendus beatae quas?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi dolorem iste quia quidem eligendi
+                        eveniet impedit ducimus deleniti aperiam architecto similique veniam corporis, minus harum
+                        dolore praesentium repellendus beatae quas?</p>
                 </div>
             </div>
         </div>

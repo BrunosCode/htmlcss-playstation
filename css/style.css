@@ -2,6 +2,9 @@
 body {
     font-family: Arial, sans-serif;
 }
+main {
+    padding-top: 120px;
+}
 
 /* RESET LINKS  */
 a {
@@ -9,6 +12,13 @@ a {
     color: inherit;
 }
 a:hover {
+    color: inherit;
+}
+.c-link {
+    text-decoration: none;
+    color: inherit;
+}
+.c-link:hover {
     color: inherit;
 }
 
@@ -52,6 +62,13 @@ a:hover {
     background-color: black;
 }
 
+/* HEADER  */
+.c-header__logo {
+    height: 1rem;
+}
+
+
+
 /* HERO SECTION  */
 .c-hero {
     padding-top: 10%;
@@ -83,6 +100,8 @@ a:hover {
     position: absolute;
     opacity: 0;
     left: 0;
+    height: 0.1px;
+    width: 0.1px;
 }
 .c-radio__label--trasparent {
     opacity: .5;
