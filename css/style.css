@@ -3,59 +3,84 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.img {
+/* RESET LINKS  */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    color: inherit;
+}
+
+/* IMAGES  */
+.c-img {
     width: 100%;
     height: auto;
 }
-.img--small {
+.c-img--small {
     width: 60%;
 }
-.img--rounded {
+.c-img--rounded {
     border-radius: 1rem;
 }
 
 /* COLORS  */
-.bg--gray {
+.h-bg--gray {
     background-color: gray;
 }
-.bg--blue {
+.h-bg--blue {
     background-color: darkblue;
 }
-.bg--black {
+.h-bg--black {
     background-color: black;
 }
 
 /* HERO SECTION  */
-.hero {
-    height: 700px;
+.c-hero {
+    padding-top: 10%;
     background-color: black;
     background-size: cover;
-    background-position: center;
+    background-position: center top;
 }
-.hero__returnal {
+.c-hero__returnal {
     background-image: url(../img/jumbo-bg.png);
 }
-.hero__ratchet {
+.c-hero__ratchet {
     background-image: url(../img/ratchet-and-clank-rift-apart-keyart.jpg);
 }
-.hero__itTakesTwo {
+.c-hero__itTakesTwo {
     background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
 }
-.hero__tonyHawkes {
+.c-hero__tonyHawkes {
     background-image: url(../img/tony-hawks-pro-skater-1-2-store-art.jpg);
 }
-.hero__crashBandicoot {
+.c-hero__crashBandicoot {
     background-image: url(../img/crash-bandicoot-4-its-about-time-store-art.jpg);
 }
 
-
-
-/* CARUSEL */
-.carusel__option--trasparent {
-    opacity: 0.6;
+/* RADIO SELECTION  */
+.c-radio {
+    position: relative;
 }
-.carusel__option--trasparent.active {
+.c-radio__input {
+    position: absolute;
+    opacity: 0;
+    left: 0;
+}
+.c-radio__label--trasparent {
+    opacity: .5;
+}
+.c-radio__label--trasparent:hover {
     opacity: 1;
 }
-
-/* CALL TO ACTION  */
+.c-radio__input:checked + .c-radio__label--trasparent{
+    opacity: 1;
+    border-bottom: solid 2px black;
+}
+.c-radio__label--borded {
+    padding: .1rem;
+}
+.c-radio__input:checked + .c-radio__label--borded {
+    box-shadow: 0px 0px 0px 2px black;
+    border-radius: 1rem;
+}

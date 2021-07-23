@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- bootstrap  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- /bootstrap  -->
     <!-- font awesome  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- /font awesome  -->
     <link rel="stylesheet" href="css/style.css">
     <title>Playstation</title>
 </head>
+
 <body>
     <!-- HEADER FIXED WITH NAVIGATION -->
     <header class="header">
@@ -22,85 +27,113 @@
     <!-- /HEADER FIXED WITH NAVIGATION -->
 
     <main>
+        <!-- FIRST HERO -->
         <section id="firstHero">
-            <!-- FIRST HERO -->
-            <div class="hero hero__returnal container-fluid  d-flex align-items-end p-3 p-lg-5 text-white">
-                <div class="row">
-                    <div class="col-12 col-lg-5">
-                        <img src="img/returnal-hero-banner-logo.png" alt="Returnal Logo" class="img img--small pb-3">
-                        <h2 class="hero__title pb-3">Rompi il cerchio</h2>
-                        <p class="hero__description pb-3">Rialzati dopo ogni sconfitta e affronta una nuova sfida con ogni rinascita in questo esplosivo thriller fantascentifico, disponibile per PS5.</p>
-                        <button class="btn rounded-pill btn--red btn-danger">Acquista ora</button>
+            <div class="c-hero c-hero__returnal">
+                <div class="container p-3 p-lg-5 text-white">
+                    <div class="row align-items-end">
+                        <div class="col-12 col-lg-5">
+                            <img src="img/returnal-hero-banner-logo.png" alt="Returnal Logo" class="c-img c-img--small pb-3">
+                            <h2 class="pb-3">Rompi il cerchio</h2>
+                            <p class="pb-3">Rialzati dopo ogni sconfitta e affronta una nuova sfida con
+                                ogni rinascita in questo esplosivo thriller fantascentifico, disponibile per PS5.</p>
+                            <button class="btn rounded-pill btn-danger">Acquista ora</button>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- /HERO SECTION-->
-    
-            <!-- SIMIL CARUSEL WITH IMAGES -->
-            <div class="carusel container-fluid p-4">
+
+            <!-- RADIO SELECTION -->
+            <div class="c-radio container p-4">
                 <div class="row gy-3">
-                    <div class="carusel__option col-6 col-sm-4 col-lg-2 pb-3">
-                        <img src="img/returnal-listing-thumb-01-ps5.jpg" alt="Returnal" class="img img--rounded">
+                    <div class="col-6 col-sm-4 col-lg-2">
+                        <input id="returnal1" class="c-radio__input" type="radio" name="firstHeroSelection" checked>
+                        <label for="returnal1" class="c-radio__label--borded">
+                            <img src="img/returnal-listing-thumb-01-ps5.jpg" alt="Returnal" class="c-img c-img--rounded">
+                        </label>
                     </div>
-                    <div class="carusel__option col-6 col-sm-4 col-lg-2 pb-3">
-                        <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="Ratchet" class="img img--rounded">
+                    <div class="col-6 col-sm-4 col-lg-2">
+                        <input id="ratchet1" class="c-radio__input" type="radio" name="firstHeroSelection">
+                        <label for="ratchet1" class="c-radio__label--borded">
+                            <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="Ratchet" class="c-img c-img--rounded">
+                        </label>
                     </div>
-                    <div class="carusel__option col-6 col-sm-4 col-lg-2 pb-3">
-                        <img src="img/returnal-listing-thumb-01-ps5.jpg" alt="Returnal" class="img img--rounded">
+                    <div class="col-6 col-sm-4 col-lg-2">
+                        <input id="returnal2" class="c-radio__input" type="radio" name="firstHeroSelection">
+                        <label for="returnal2" class="c-radio__label--borded">
+                            <img src="img/returnal-listing-thumb-01-ps5.jpg" alt="Returnal" class="c-img c-img--rounded">
+                        </label>
                     </div>
-                    <div class="carusel__option col-6 col-sm-4 col-lg-2 pb-3">
-                        <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="Ratchet" class="img img--rounded">
+                    <div class="col-6 col-sm-4 col-lg-2">
+                        <input id="ratchet2" class="c-radio__input" type="radio" name="firstHeroSelection">
+                        <label for="ratchet2" class="c-radio__label--borded">
+                            <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="Ratchet" class="c-img c-img--rounded">
+                        </label>
                     </div>
-                    <div class="carusel__option col-6 col-sm-4 col-lg-2 pb-3">
-                        <img src="img/returnal-listing-thumb-01-ps5.jpg" alt="Returnal" class="img img--rounded">
+                    <div class="col-6 col-sm-4 col-lg-2">
+                        <input id="returnal3" class="c-radio__input" type="radio" name="firstHeroSelection">
+                        <label for="returnal3" class="c-radio__label--borded">
+                            <img src="img/returnal-listing-thumb-01-ps5.jpg" alt="Returnal" class="c-img c-img--rounded">
+                        </label>
                     </div>
-                    <div class="carusel__option col-6 col-sm-4 col-lg-2 pb-3">
-                        <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="Ratchet" class="img img--rounded">
+                    <div class="col-6 col-sm-4 col-lg-2">
+                        <input id="ratchet3" class="c-radio__input" type="radio" name="firstHeroSelection">
+                        <label for="ratchet3" class="c-radio__label--borded">
+                            <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="Ratchet" class="c-img c-img--rounded">
+                        </label>
                     </div>
                 </div>
             </div>
-            <!-- /SIMIL CARUSEL WITH IMAGES -->
+            <!-- /RADIO SELECTION -->
         </section>
 
         <!-- CALL TO ACTION SECTION, WITH CARUSEL -->
         <section id="playstation5Products">
-            <div class="container-fluid text-center py-3 py-lg-5">
-                <p class="section__preTitle text-primary text-uppercase mb-0">Play has no Limits</p>
-                <h2 class="section__title">Ecco la Playstation 5</h2>
-                <p class="section__description text-muted p-3">Tuffati in nuove possibilità di gioco completamente inaspettate</p>
-    
-                <div class="cta row align-items-center">
-                    <div class="cta__block col-12 col-md-6 text-start">
-                        <h3 class="cta__title">Console Playstation 5</h3>
-                        <p class="cta__description text-muted">Sperimenta la nuova generazione di incredibili giochi Playstation.</p>
-                        <button class="btn rounded-pill cta__btn btn-primary">Maggiori informazioni</button>
+            <div class="container text-center py-3 py-lg-5">
+                <p class="c-preTitle text-primary text-uppercase mb-0">Play has no Limits</p>
+                <h2 class="c-title">Ecco la Playstation 5</h2>
+                <p class="c-description text-muted p-3">Tuffati in nuove possibilità di gioco completamente
+                    inaspettate</p>
+
+                <div class="c-cta row align-items-center">
+                    <div class="c-cta__block col-12 col-md-6 text-start">
+                        <h3 class="title">Console Playstation 5</h3>
+                        <p class="description text-muted">Sperimenta la nuova generazione di incredibili giochi
+                            Playstation.</p>
+                        <button class="btn rounded-pill btn-primary">Maggiori informazioni</button>
                     </div>
-                    <div class="cta__block col-12 col-md-6">
-                        <img src="img/playstation-5-thumb.png" alt="Playstation 5" class="img">
+                    <div class="c-cta__block col-12 col-md-6">
+                        <img src="img/playstation-5-thumb.png" alt="Playstation 5" class="c-img">
                     </div>
                 </div>
-                
-                <div class="carusel row p-3 p-lg-5 gy-3">
-                    <div class="carusel__option carusel__option--trasparent active col-4 col-md-2 flex-md-grow-1">
-                        <img src="img/playstation-5-thumb.png" alt="Playstation 5" class="img img--small">
-                        <p class="text-center">Console Playstation 5</p>
-                    </div>
-                    <div class="carusel__option carusel__option--trasparent col-4 col-md-2 flex-md-grow-1">
-                        <img src="img/joypad-thumb.png" alt="DualSense" class="img img--small">
-                        <p class="text-center">Controller wireless DualSense<sup>TM</sup></p>
-                    </div>
-                    <div class="carusel__option carusel__option--trasparent col-4 col-md-2 flex-md-grow-1">
-                        <img src="img/headset-thumb.png" alt="DualSense" class="img img--small">
-                        <p class="text-center">Cuffie wireless con microfono PULSE 3<sup>TM</sup></p>
-                    </div>
-                    <div class="carusel__option carusel__option--trasparent col-4 col-md-2 flex-md-grow-1">
-                        <img src="img/remote-thumb.png" alt="Remote" class="img img--small">
-                        <p class="text-center">Telecomando Media</p>
-                    </div>
-                    <div class="carusel__option carusel__option--trasparent col-4 col-md-2 flex-md-grow-1">
-                        <img src="img/camera-thumb.jpg" alt="Camera" class="img img--small">
-                        <p class="text-center">Telecamera HD</p>
-                    </div>
+            
+                <div class="c-radio row row-cols-3 row-cols-md-5 py-3 py-lg-5 gy-3">
+                    <input id="playstation5" class="c-radio__input" type="radio" name="ps5Accessories" value="playstation5"  checked>
+                    <label for="playstation5" class="c-radio__label--trasparent col">
+                        <img src="img/playstation-5-thumb.png" alt="Playstation 5" class="c-img c-img--small">
+                        <p class="text-center pt-3 pt-lg-4">Console Playstation 5</p>
+                    </label>
+                    <input id="dualsense" class="c-radio__input" type="radio" name="ps5Accessories" value="dualsense">
+                    <label for="dualsense" class="c-radio__label--trasparent col">
+                        <img src="img/joypad-thumb.png" alt="DualSense" class="c-img c-img--small">
+                        <p class="text-center pt-3 pt-lg-4">Controller wireless DualSense<sup>TM</sup></p>
+                    </label>
+                    <input class="c-radio__input" type="radio" name="ps5Accessories" value="headset" id="headset">
+                    <label for="headset" class="c-radio__label--trasparent col">
+                        <img src="img/headset-thumb.png" alt="Headset" class="c-img c-img--small">
+                        <p class="text-center pt-3 pt-lg-4">Cuffie wireless con microfono PULSE 3<sup>TM</sup></p>
+                    </label>
+                    <input id="remote" class="c-radio__input" type="radio" name="ps5Accessories" value="remote">
+                    <label for="remote" class="c-radio__label--trasparent col">
+                        <img src="img/remote-thumb.png" alt="Remote" class="c-img c-img--small">
+                        <p class="text-center pt-3 pt-lg-4">Telecomando Media</p>
+                    </label>
+                    <input id="camera" class="c-radio__input" type="radio" name="ps5Accessories" value="camera">
+                    <label for="camera" class="c-radio__label--trasparent col">
+                        <img src="img/camera-thumb.jpg" alt="Camera" class="c-img c-img--small">
+                        <p class="text-center pt-3 pt-lg-4">Telecamera HD</p>
+                    </label>
                 </div>
             </div>
         </section>
@@ -108,119 +141,166 @@
 
         <!-- SECOND HERO SECTION -->
         <section id="secondHero">
-            <div class="hero hero__itTakesTwo container-fluid  d-flex align-items-end p-3 p-lg-5 text-white">
-                <div class="row">
-                    <div class="col-12 col-lg-5">
-                        <img src="img/it-takes-two-logo.png" alt="Returnal Logo" class="img img--small pb-3">
-                        <h2 class="hero__title pb-3">Un avventura-coperativa selvaggia ti attende</h2>
-                        <p class="hero__description pb-3">Trova un amico e partite insieme per l'avventura più folle delle vostre vite in It Takes Two, un gioco d'avventura coperativa a piattaforme che stravolge il suo genere.</p>
-                        <button class="btn rounded-pill btn--red btn-danger">Acquista ora</button>
+            <div class="c-hero c-hero__itTakesTwo">
+                <div class="container py-3 py-lg-5 text-white">
+                    <div class="row">
+                        <div class="col-12 col-lg-5">
+                            <img src="img/it-takes-two-logo.png" alt="Returnal Logo" class="c-img c-img--small pb-3">
+                            <h2 class="title pb-3">Un avventura-coperativa selvaggia ti attende</h2>
+                            <p class="description pb-3">Trova un amico e partite insieme per l'avventura più folle
+                                delle vostre vite in It Takes Two, un gioco d'avventura coperativa a piattaforme che
+                                stravolge il suo genere.</p>
+                            <button class="btn rounded-pill btn-danger">Acquista ora</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- /HERO SECTION-->
-    
-            <!-- SIMIL CARUSEL WITH IMAGES -->
-            <div class="carusel bg--black container-fluid p-4 text-white">
+        </section>
+        <!-- /SECOND HERO SECTION-->
+
+            <!-- GRID OF CARD-->
+        <section id="newGames" class="h-bg--black">
+            <div class="container p-4 text-white">
                 <h4>Nuove Uscite</h4>
                 <h5 class="pb-3">Giochi incredibili per PS4 e PS5 disponibili ora</h5>
                 <div class="row">
-                    <div class="carusel__option col-6 col-sm-4 col-lg-2 pb-3">
-                        <img src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="Tony Hawk's Pro Skater" class="img img--rounded pb-2">
-                        <p>Tony Hawk's<sup>TM</sup> Pro Skater<sup>TM</sup> 1 + 2</p>
+                    <div class="col-6 col-sm-4 col-lg-2 pb-3">
+                        <a href="#">
+                            <img src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="Tony Hawk's Pro Skater"
+                                class="c-img c-img--rounded pb-2">
+                            <p>Tony Hawk's<sup>TM</sup> Pro Skater<sup>TM</sup> 1 + 2</p>
+                        </a>
                     </div>
-                    <div class="carusel__option col-6 col-sm-4 col-lg-2 pb-3">
-                        <img src="img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="Crash Bandicoot 4" class="img img--rounded pb-2">
-                        <p>Crash Bandicoot: It's About Time</p>
+                    <div class="col-6 col-sm-4 col-lg-2 pb-3">
+                        <a href="#">
+                            <img src="img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="Crash Bandicoot 4"
+                                class="c-img c-img--rounded pb-2">
+                            <p>Crash Bandicoot: It's About Time</p>
+                        </a>
+                    </div>  
+                    <div class="col-6 col-sm-4 col-lg-2 pb-3">
+                        <a href="#">
+                            <img src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="Tony Hawk's Pro Skater"
+                                class="c-img c-img--rounded pb-2">
+                            <p>Tony Hawk's<sup>TM</sup> Pro Skater<sup>TM</sup> 1 + 2</p>
+                        </a>
                     </div>
-                    <div class="carusel__option col-6 col-sm-4 col-lg-2 pb-3">
-                        <img src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="Tony Hawk's Pro Skater" class="img img--rounded pb-2">
-                        <p>Tony Hawk's<sup>TM</sup> Pro Skater<sup>TM</sup> 1 + 2</p>
+                    <div class="col-6 col-sm-4 col-lg-2 pb-3">
+                        <a href="#">
+                            <img src="img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="Crash Bandicoot 4"
+                                class="c-img c-img--rounded pb-2">
+                            <p>Crash Bandicoot: It's About Time</p>
+                        </a>
+                    </div>  
+                    <div class="col-6 col-sm-4 col-lg-2 pb-3">
+                        <a href="#">
+                            <img src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="Tony Hawk's Pro Skater"
+                                class="c-img c-img--rounded pb-2">
+                            <p>Tony Hawk's<sup>TM</sup> Pro Skater<sup>TM</sup> 1 + 2</p>
+                        </a>
                     </div>
-                    <div class="carusel__option col-6 col-sm-4 col-lg-2 pb-3">
-                        <img src="img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="Crash Bandicoot 4" class="img img--rounded pb-2">
-                        <p>Crash Bandicoot: It's About Time</p>
+                    <div class="col-6 col-sm-4 col-lg-2 pb-3">
+                        <a href="#">
+                            <img src="img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="Crash Bandicoot 4"
+                                class="c-img c-img--rounded pb-2">
+                            <p>Crash Bandicoot: It's About Time</p>
+                        </a>
+                    </div>  
+                    <div class="col-6 col-sm-4 col-lg-2 pb-3">
+                        <a href="#">
+                            <img src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="Tony Hawk's Pro Skater"
+                                class="c-img c-img--rounded pb-2">
+                            <p>Tony Hawk's<sup>TM</sup> Pro Skater<sup>TM</sup> 1 + 2</p>
+                        </a>
                     </div>
-                    <div class="carusel__option col-6 col-sm-4 col-lg-2 pb-3">
-                        <img src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="Tony Hawk's Pro Skater" class="img img--rounded pb-2">
-                        <p>Tony Hawk's<sup>TM</sup> Pro Skater<sup>TM</sup> 1 + 2</p>
+                    <div class="col-6 col-sm-4 col-lg-2 pb-3">
+                        <a href="#">
+                            <img src="img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="Crash Bandicoot 4"
+                                class="c-img c-img--rounded pb-2">
+                            <p>Crash Bandicoot: It's About Time</p>
+                        </a>
+                    </div>  
+                    <div class="col-6 col-sm-4 col-lg-2 pb-3">
+                        <a href="#">
+                            <img src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="Tony Hawk's Pro Skater"
+                                class="c-img c-img--rounded pb-2">
+                            <p>Tony Hawk's<sup>TM</sup> Pro Skater<sup>TM</sup> 1 + 2</p>
+                        </a>
                     </div>
-                    <div class="carusel__option col-6 col-sm-4 col-lg-2 pb-3">
-                        <img src="img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="Crash Bandicoot 4" class="img img--rounded pb-2">
-                        <p>Crash Bandicoot: It's About Time</p>
+                    <div class="col-6 col-sm-4 col-lg-2 pb-3">
+                        <a href="#">
+                            <img src="img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="Crash Bandicoot 4"
+                                class="c-img c-img--rounded pb-2">
+                            <p>Crash Bandicoot: It's About Time</p>
+                        </a>
+                    </div>  
+                    <div class="col-6 col-sm-4 col-lg-2 pb-3">
+                        <a href="#">
+                            <img src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="Tony Hawk's Pro Skater"
+                                class="c-img c-img--rounded pb-2">
+                            <p>Tony Hawk's<sup>TM</sup> Pro Skater<sup>TM</sup> 1 + 2</p>
+                        </a>
                     </div>
-                    <div class="carusel__option col-6 col-sm-4 col-lg-2 pb-3">
-                        <img src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="Tony Hawk's Pro Skater" class="img img--rounded pb-2">
-                        <p>Tony Hawk's<sup>TM</sup> Pro Skater<sup>TM</sup> 1 + 2</p>
+                    <div class="col-6 col-sm-4 col-lg-2 pb-3">
+                        <a href="#">
+                            <img src="img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="Crash Bandicoot 4"
+                                class="c-img c-img--rounded pb-2">
+                            <p>Crash Bandicoot: It's About Time</p>
+                        </a>
+                    </div>  
+                </div>
+            </div>
+        </section>
+            <!-- /RADIO SELECTION -->
+
+        <!-- CARDS SECTION  -->
+        <section id="playstation4Products">
+            <div class="container text-center py-3 py-lg-5">
+                <h3 class="c-title">Esplora Playstation4<sup>®</sup></h3>
+                <p class="c-description text-muted">Giochi incredibili e intrattenimento senza fine.<br> Non c'è
+                    mai stato un momento migliore per giocare alla tua PS4.</p>
+
+                <div class="row my-3 text-start">
+                    <div class="section__card col-12 col-md-4">
+                        <img src="img/ps4-slim-homepage-image-block.jpg" alt="PS4 Slim" class="c-img">
+                        <h4 class="c-title">Playstation 4</h4>
+                        <p class="c-description text-muted">Giochi incredibili live su Playstation 4, con 1 TB di
+                            spazio di archiviazione.</p>
+                        <button class="btn rounded-pill btn-primary">Scopri di più</button>
                     </div>
-                    <div class="carusel__option col-6 col-sm-4 col-lg-2 pb-3">
-                        <img src="img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="Crash Bandicoot 4" class="img img--rounded pb-2">
-                        <p>Crash Bandicoot: It's About Time</p>
+                    <div class="section__card col-12 col-md-4">
+                        <img src="img/double11-202010-tw-psvr.jpg" alt="Playstation VR" class="c-img">
+                        <h4 class="c-title">Playstation VR</h4>
+                        <p class="c-description text-muted">Oltre 500 titoli ed esperienze di gioco.<br>Scoprili
+                            tutti.</p>
+                        <button class="btn rounded-pill btn-primary">Scopri di più</button>
                     </div>
-                    <div class="carusel__option col-6 col-sm-4 col-lg-2 pb-3">
-                        <img src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="Tony Hawk's Pro Skater" class="img img--rounded pb-2">
-                        <p>Tony Hawk's<sup>TM</sup> Pro Skater<sup>TM</sup> 1 + 2</p>
-                    </div>
-                    <div class="carusel__option col-6 col-sm-4 col-lg-2 pb-3">
-                        <img src="img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="Crash Bandicoot 4" class="img img--rounded pb-2">
-                        <p>Crash Bandicoot: It's About Time</p>
-                    </div>
-                    <div class="carusel__option col-6 col-sm-4 col-lg-2 pb-3">
-                        <img src="img/tony-hawks-pro-skater-1-2-store-art.jpg" alt="Tony Hawk's Pro Skater" class="img img--rounded pb-2">
-                        <p>Tony Hawk's<sup>TM</sup> Pro Skater<sup>TM</sup> 1 + 2</p>
-                    </div>
-                    <div class="carusel__option col-6 col-sm-4 col-lg-2 pb-3">
-                        <img src="img/crash-bandicoot-4-its-about-time-store-art.jpg" alt="Crash Bandicoot 4" class="img img--rounded pb-2">
-                        <p>Crash Bandicoot: It's About Time</p>
+                    <div class="section__card col-12 col-md-4">
+                        <img src="img/dualshock-4-listing-thumb.jpg" alt="Dualshock 4" class="c-img">
+                        <h4 class="c-title">Accessori</h4>
+                        <p class="c-description text-muted">Migliora la tua esperienza PS4 con una gamma di
+                            accessori ufficiali.</p>
+                        <button class="btn rounded-pill btn-primary">Scopri di più</button>
                     </div>
                 </div>
             </div>
-            <!-- /SIMIL CARUSEL WITH IMAGES -->
         </section>
-        <!-- /SECOND HERO SECTION -->
-
-        <!-- CARDS SECTION  -->
-            <section id="playstation4Products">
-                <div class="container text-center py-3 py-lg-5">
-                    <h3 class="section__title">Esplora Playstation4<sup>®</sup></h3>
-                    <p class="section__description text-muted">Giochi incredibili e intrattenimento senza fine.<br> Non c'è mai stato un momento migliore per giocare alla tua PS4.</p>
-                    
-                    <div class="row my-3 text-start">
-                        <div class="section__card col-12 col-md-4">
-                            <img src="img/ps4-slim-homepage-image-block.jpg" alt="PS4 Slim" class="img">
-                            <h4 class="card__title">Playstation 4</h4>
-                            <p class="card__description text-muted">Giochi incredibili live su Playstation 4, con 1 TB di spazio di archiviazione.</p>
-                            <button class="btn rounded-pill card__btn btn-primary">Scopri di più</button>
-                        </div>
-                        <div class="section__card col-12 col-md-4">
-                            <img src="img/double11-202010-tw-psvr.jpg" alt="Playstation VR" class="img">
-                            <h4 class="card__title">Playstation VR</h4>
-                            <p class="card__description text-muted">Oltre 500 titoli ed esperienze di gioco.<br>Scoprili tutti.</p>
-                            <button class="btn rounded-pill card__btn btn-primary">Scopri di più</button>
-                        </div>
-                        <div class="section__card col-12 col-md-4">
-                            <img src="img/dualshock-4-listing-thumb.jpg" alt="Dualshock 4" class="img">
-                            <h4 class="card__title">Accessori</h4>
-                            <p class="card__description text-muted">Migliora la tua esperienza PS4 con una gamma di accessori ufficiali.</p>
-                            <button class="btn rounded-pill card__btn btn-primary">Scopri di più</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
         <!-- /CARDS SECTION  -->
 
         <!-- CALL TO ACTION SECTION -->
-        <section id="playstationPlus" class="bg--gray">
+        <section id="playstationPlus" class="h-bg--gray">
             <div class="container">
                 <div class="row">
                     <div class="cta row align-items-center">
                         <div class="cta__block col-12 col-md-6 text-start">
-                            <img src="img/ps-plus-logo.png" alt="Playstation Plus Logo" class="img img--small mb-3">
-                            <p class="cta__descriptionmb-3">Sperimenta la nuova generazione di incredibili giochi Playstation.</p>
+                            <img src="img/ps-plus-logo.png" alt="Playstation Plus Logo" class="c-img c-img--small mb-3">
+                            <p class="cta__descriptionmb-3">Sperimenta la nuova generazione di incredibili giochi
+                                Playstation.</p>
                             <button class="btn rounded-pill btn-light">Maggiori informazioni</button>
                         </div>
                         <div class="cta__block col-12 col-md-6">
-                            <img src="img/ps-plus-april-monthly-games-featured-image-block.png" alt="Playstation Plus April" class="img">
+                            <img src="img/ps-plus-april-monthly-games-featured-image-block.png"
+                                alt="Playstation Plus April" class="c-img">
                         </div>
                     </div>
                 </div>
@@ -231,18 +311,20 @@
         <!-- CARDS SECTION  -->
         <section id="storeDiscounts">
             <div class="container text-center py-3 py-lg-5">
-                <h3 class="section__title">Nuovi sconti su Playstation store</h3>
-                <p class="section__description text-muted">Sconti pazzeschi, collezioni curate e saldi stagionali su PS5, PS4 e PS VR, tutti in unico posto.</p>
-                
+                <h3 class="c-title">Nuovi sconti su Playstation store</h3>
+                <p class="c-description text-muted">Sconti pazzeschi, collezioni curate e saldi stagionali su
+                    PS5, PS4 e PS VR, tutti in unico posto.</p>
+
                 <div class="row my-3 text-start gy-5">
-                    <div class="section__card col-12 col-md-4">
-                        <img src="img/playstation-store-games-under-20-spotlight.jpg" alt="PS4 Slim" class="img">
+                    <div class="col-12 col-md-4">
+                        <img src="img/playstation-store-games-under-20-spotlight.jpg" alt="PS4 Slim" class="c-img">
                     </div>
-                    <div class="section__card col-12 col-md-4">
-                        <img src="img/playstation-store-golden-week-sale-spotlight.jpg" alt="Playstation VR" class="img">
+                    <div class="col-12 col-md-4">
+                        <img src="img/playstation-store-golden-week-sale-spotlight.jpg" alt="Playstation VR"
+                            class="c-img">
                     </div>
-                    <div class="section__card col-12 col-md-4">
-                        <img src="img/playstation-store-free-to-play-spotlight.png" alt="Dualshock 4" class="img">
+                    <div class="col-12 col-md-4">
+                        <img src="img/playstation-store-free-to-play-spotlight.png" alt="Dualshock 4" class="c-img">
                     </div>
                 </div>
             </div>
@@ -250,17 +332,21 @@
         <!-- /CARDS SECTION  -->
 
         <!-- CALL TO ACTION SECTION -->
-        <section id="playstationNow" class="bg--blue text-white">
+        <section id="playstationNow" class="h-bg--blue text-white">
             <div class="container">
                 <div class="row">
-                    <div class="cta row align-items-center">
-                        <div class="cta__block col-12 col-md-6 text-start">
-                            <img src="img/ps-now-logo-two-column.png" alt="Playstation Plus Logo" class="img img--small mb-3">
-                            <p class="cta__descriptionmb-3">Ottieni l'accesso immediato a una vastissima collezione di oltre 800 giochi per PS4, PS3 e PS2 su PS$ e PC Windows, con nuovi titoli aggiunti ogni mese.</p>
+                    <div class="c-cta row align-items-center">
+                        <div class="c-cta__block col-12 col-md-6 text-start">
+                            <img src="img/ps-now-logo-two-column.png" alt="Playstation Plus Logo"
+                                class="c-img c-img--small mb-3">
+                            <p class="c-description mb-3">Ottieni l'accesso immediato a una vastissima collezione di
+                                oltre 800 giochi per PS4, PS3 e PS2 su PS5 e PC Windows, con nuovi titoli aggiunti ogni
+                                mese.</p>
                             <button class="btn rounded-pill btn-light">Esplora Playstation Now</button>
                         </div>
                         <div class="cta__block col-12 col-md-6">
-                            <img src="img/ps-now-april-featured-image-block.png" alt="Playstation Now April" class="img">
+                            <img src="img/ps-now-april-featured-image-block.png" alt="Playstation Now April"
+                                class="c-img">
                         </div>
                     </div>
                 </div>
@@ -270,27 +356,27 @@
 
         <!-- SOCIAL LINKS SECTION  -->
         <section id="socialLinks">
-            <div class="container text-center">
-                <h4>Seguici sui Social</h4>
-                <div class="social row justify-content-center py-3 gy-5">
+            <div class="container text-center py-3 py-lg-5">
+                <h4 class="c-title pb-3">Seguici sui Social</h4>
+                <div class="c-socialLinks row justify-content-center gy-5">
                     <div class="col-6 col-md-3 col-lg-2">
-                        <a href="#" class="social__link">
-                            <img src="img/twitter.jpg" alt="Twitter" class="img">
+                        <a href="#" class="c-socialLinks__link">
+                            <img src="img/twitter.jpg" alt="Twitter" class="c-img">
                         </a>
                     </div>
                     <div class="col-6 col-md-3 col-lg-2">
-                        <a href="#" class="social__link">
-                            <img src="img/facebook.jpg" alt="Facebook" class="img">
+                        <a href="#" class="c-socialLinks__link">
+                            <img src="img/facebook.jpg" alt="Facebook" class="c-img">
                         </a>
                     </div>
                     <div class="col-6 col-md-3 col-lg-2">
-                        <a href="#" class="social__link">
-                            <img src="img/instagram.jpg" alt="Instagram" class="img">
+                        <a href="#" class="c-socialLinks__link">
+                            <img src="img/instagram.jpg" alt="Instagram" class="c-img">
                         </a>
                     </div>
                     <div class="col-6 col-md-3 col-lg-2">
-                        <a href="#" class="social__link">
-                            <img src="img/youtube.png" alt="Youtube" class="img">
+                        <a href="#" class="c-socialLinks__link">
+                            <img src="img/youtube.png" alt="Youtube" class="c-img">
                         </a>
                     </div>
                 </div>
@@ -335,6 +421,9 @@
         <div class="footer__block"></div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
