@@ -23,6 +23,23 @@ a:hover {
 .c-img--rounded {
     border-radius: 1rem;
 }
+.c-img--logo {
+    height: 5rem;
+    width: auto;
+}
+.c-img--smallIcon {
+    width: 1.5rem;
+    margin-right: .5rem;
+}
+
+/* LIST  */
+.c-list {
+    list-style: none;
+    margin: 0;
+}
+.c-list li {
+    margin: .25rem 0;
+}
 
 /* COLORS  */
 .h-bg--gray {

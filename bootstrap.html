@@ -30,7 +30,7 @@
         <!-- FIRST HERO -->
         <section id="firstHero">
             <div class="c-hero c-hero__returnal">
-                <div class="container p-3 p-lg-5 text-white">
+                <div class="container py-3 py-lg-5 text-white">
                     <div class="row align-items-end">
                         <div class="col-12 col-lg-5">
                             <img src="img/returnal-hero-banner-logo.png" alt="Returnal Logo" class="c-img c-img--small pb-3">
@@ -45,7 +45,7 @@
             <!-- /HERO SECTION-->
 
             <!-- RADIO SELECTION -->
-            <div class="c-radio container p-4">
+            <div class="c-radio container py-3 py-lg-5">
                 <div class="row gy-3">
                     <div class="col-6 col-sm-4 col-lg-2">
                         <input id="returnal1" class="c-radio__input" type="radio" name="firstHeroSelection" checked>
@@ -88,12 +88,12 @@
             <!-- /RADIO SELECTION -->
         </section>
 
-        <!-- CALL TO ACTION SECTION, WITH CARUSEL -->
+        <!-- CALL TO ACTION SECTION, WITH RADIO SELECTION -->
         <section id="playstation5Products">
             <div class="container text-center py-3 py-lg-5">
                 <p class="c-preTitle text-primary text-uppercase mb-0">Play has no Limits</p>
                 <h2 class="c-title">Ecco la Playstation 5</h2>
-                <p class="c-description text-muted p-3">Tuffati in nuove possibilità di gioco completamente
+                <p class="c-description text-muted py-3">Tuffati in nuove possibilità di gioco completamente
                     inaspettate</p>
 
                 <div class="c-cta row align-items-center">
@@ -108,36 +108,46 @@
                     </div>
                 </div>
             
-                <div class="c-radio row row-cols-3 row-cols-md-5 py-3 py-lg-5 gy-3">
-                    <input id="playstation5" class="c-radio__input" type="radio" name="ps5Accessories" value="playstation5"  checked>
-                    <label for="playstation5" class="c-radio__label--trasparent col">
-                        <img src="img/playstation-5-thumb.png" alt="Playstation 5" class="c-img c-img--small">
-                        <p class="text-center pt-3 pt-lg-4">Console Playstation 5</p>
-                    </label>
-                    <input id="dualsense" class="c-radio__input" type="radio" name="ps5Accessories" value="dualsense">
-                    <label for="dualsense" class="c-radio__label--trasparent col">
-                        <img src="img/joypad-thumb.png" alt="DualSense" class="c-img c-img--small">
-                        <p class="text-center pt-3 pt-lg-4">Controller wireless DualSense<sup>TM</sup></p>
-                    </label>
-                    <input class="c-radio__input" type="radio" name="ps5Accessories" value="headset" id="headset">
-                    <label for="headset" class="c-radio__label--trasparent col">
-                        <img src="img/headset-thumb.png" alt="Headset" class="c-img c-img--small">
-                        <p class="text-center pt-3 pt-lg-4">Cuffie wireless con microfono PULSE 3<sup>TM</sup></p>
-                    </label>
-                    <input id="remote" class="c-radio__input" type="radio" name="ps5Accessories" value="remote">
-                    <label for="remote" class="c-radio__label--trasparent col">
-                        <img src="img/remote-thumb.png" alt="Remote" class="c-img c-img--small">
-                        <p class="text-center pt-3 pt-lg-4">Telecomando Media</p>
-                    </label>
-                    <input id="camera" class="c-radio__input" type="radio" name="ps5Accessories" value="camera">
-                    <label for="camera" class="c-radio__label--trasparent col">
-                        <img src="img/camera-thumb.jpg" alt="Camera" class="c-img c-img--small">
-                        <p class="text-center pt-3 pt-lg-4">Telecamera HD</p>
-                    </label>
+                <div class="c-radio row row-cols-3 row-cols-md-5 py-3 py-lg-5 gy-3 justify-content-between">
+                    <div class="col">
+                        <input id="playstation5" class="c-radio__input" type="radio" name="ps5Accessories" value="playstation5"  checked>
+                        <label for="playstation5" class="c-radio__label--trasparent">
+                            <img src="img/playstation-5-thumb.png" alt="Playstation 5" class="c-img c-img--small">
+                            <p class="text-center pt-3 pt-lg-4">Console Playstation 5</p>
+                        </label>
+                    </div>
+                    <div class="col">
+                        <input id="dualsense" class="c-radio__input" type="radio" name="ps5Accessories" value="dualsense">
+                        <label for="dualsense" class="c-radio__label--trasparent col">
+                            <img src="img/joypad-thumb.png" alt="DualSense" class="c-img c-img--small">
+                            <p class="text-center pt-3 pt-lg-4">Controller wireless DualSense<sup>TM</sup></p>
+                        </label>
+                    </div>
+                    <div class="col">
+                        <input class="c-radio__input" type="radio" name="ps5Accessories" value="headset" id="headset">
+                        <label for="headset" class="c-radio__label--trasparent col">
+                            <img src="img/headset-thumb.png" alt="Headset" class="c-img c-img--small">
+                            <p class="text-center pt-3 pt-lg-4">Cuffie wireless con microfono PULSE 3<sup>TM</sup></p>
+                        </label>
+                    </div>
+                    <div class="col">
+                        <input id="remote" class="c-radio__input" type="radio" name="ps5Accessories" value="remote">
+                        <label for="remote" class="c-radio__label--trasparent col">
+                            <img src="img/remote-thumb.png" alt="Remote" class="c-img c-img--small">
+                            <p class="text-center pt-3 pt-lg-4">Telecomando Media</p>
+                        </label>
+                    </div>
+                    <div class="col">
+                        <input id="camera" class="c-radio__input" type="radio" name="ps5Accessories" value="camera">
+                        <label for="camera" class="c-radio__label--trasparent col">
+                            <img src="img/camera-thumb.jpg" alt="Camera" class="c-img c-img--small">
+                            <p class="text-center pt-3 pt-lg-4">Telecamera HD</p>
+                        </label>
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- /CALL TO ACTION SECTION, WITH CARUSEL -->
+        <!-- /CALL TO ACTION SECTION, WITH RADIO SELECTION -->
 
         <!-- SECOND HERO SECTION -->
         <section id="secondHero">
@@ -357,8 +367,8 @@
         <!-- SOCIAL LINKS SECTION  -->
         <section id="socialLinks">
             <div class="container text-center py-3 py-lg-5">
-                <h4 class="c-title pb-3">Seguici sui Social</h4>
-                <div class="c-socialLinks row justify-content-center gy-5">
+                <h4 class="c-title py-3">Seguici sui Social</h4>
+                <div class="c-socialLinks row justify-content-center my-3 gy-5">
                     <div class="col-6 col-md-3 col-lg-2">
                         <a href="#" class="c-socialLinks__link">
                             <img src="img/twitter.jpg" alt="Twitter" class="c-img">
@@ -385,40 +395,46 @@
         <!-- /SOCIAL LINKS SECTION  -->
     </main>
 
-    <footer>
+    <footer class="c-footer h-bg--blue">
+        <div class="container text-white py-3 py-lg-5">
+            <div class="row">
+                <div class="c-footer__block col-12 col-lg-6 align-self-center my-3 my-lg-5"">
+                    <img class="c-img--logo pb-3" src="img/ps-footer.svg" alt="Playstation Logo">
+                    <p><img class="c-img--smallIcon" src="img/language-globe.svg" alt="Globe"> Country / Region: Italy</p>
 
-        <div class="footer__block"></div>
-        <nav class="footer__col">
-            <ul class="list">
-                <li><a href="" class="list__link"></a></li>
-                <li><a href="" class="list__link"></a></li>
-                <li><a href="" class="list__link"></a></li>
-                <li><a href="" class="list__link"></a></li>
-                <li><a href="" class="list__link"></a></li>
-                <li><a href="" class="list__link"></a></li>
-            </ul>
-        </nav>
-        <nav class="footer__col">
-            <ul class="list">
-                <li><a href="" class="list__link"></a></li>
-                <li><a href="" class="list__link"></a></li>
-                <li><a href="" class="list__link"></a></li>
-                <li><a href="" class="list__link"></a></li>
-                <li><a href="" class="list__link"></a></li>
-                <li><a href="" class="list__link"></a></li>
-            </ul>
-        </nav>
-        <nav class="footer__col">
-            <ul class="list">
-                <li><a href="" class="list__link"></a></li>
-                <li><a href="" class="list__link"></a></li>
-                <li><a href="" class="list__link"></a></li>
-                <li><a href="" class="list__link"></a></li>
-                <li><a href="" class="list__link"></a></li>
-                <li><a href="" class="list__link"></a></li>
-            </ul>
-        </nav>
-        <div class="footer__block"></div>
+                </div>
+                <nav class="c-footer__col col-12 col-sm-4 col-lg-2">
+                    <ul class="c-list">
+                        <li><a href="#" class="c-list__link">Link footer n</a></li>
+                        <li><a href="#" class="c-list__link">Link footer n</a></li>
+                        <li><a href="#" class="c-list__link">Link footer n</a></li>
+                        <li><a href="#" class="c-list__link">Link footer n</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer__col col-12 col-sm-4 col-lg-2">
+                    <ul class="c-list">
+                        <li><a href="#" class="c-list__link">Link footer n</a></li>
+                        <li><a href="#" class="c-list__link">Link footer n</a></li>
+                        <li><a href="#" class="c-list__link">Link footer n</a></li>
+                        <li><a href="#" class="c-list__link">Link footer n</a></li>
+                        <li><a href="#" class="c-list__link">Link footer n</a></li>
+                        <li><a href="#" class="c-list__link">Link footer n</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer__col col-12 col-sm-4 col-lg-2">
+                    <ul class="c-list">
+                        <li><a href="#" class="c-list__link">Link footer n</a></li>
+                        <li><a href="#" class="c-list__link">Link footer n</a></li>
+                        <li><a href="#" class="c-list__link">Link footer n</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__block col-12 col-lg-6 align-self-center my-3 my-lg-5">
+                    <img class="c-img--logo pb-3" src="img/sie-logo.svg" alt="Sony Logo">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi dolorem iste quia quidem eligendi eveniet impedit ducimus deleniti aperiam architecto similique veniam corporis, minus harum dolore praesentium repellendus beatae quas?</p>
+                </div>
+            </div>
+        </div>
+
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
