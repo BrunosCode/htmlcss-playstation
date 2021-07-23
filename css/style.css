@@ -11,6 +11,12 @@ body {
     width: 100%;
     height: auto;
 }
+.img--small {
+    width: 60%;
+}
+.img--rounded {
+    border-radius: 1rem;
+}
 
 
 /* HERO SECTION  */
@@ -32,14 +38,10 @@ body {
 
 
 /* CARUSEL */
-
-.carusel__img {
-    border-radius: 1rem;
+.carusel__option--trasparent {
+    opacity: 0.6;
 }
-/* !!!!change in img--rounded!!!!!  */
-.carusel__option--traparent {
-    opacity: .8;
-}
-.carusel__option--traparent.active {
+.carusel__option--trasparent.active {
     opacity: 1;
 }
+
