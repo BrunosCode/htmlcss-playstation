@@ -21,7 +21,7 @@ body {
 
 /* HERO SECTION  */
 .hero {
-    height: 80vh;
+    height: 700px;
     background-color: black;
     background-size: cover;
     background-position: center;
@@ -32,12 +32,22 @@ body {
 .hero__ratchet {
     background-image: url(../img/ratchet-and-clank-rift-apart-keyart.jpg);
 }
-.hero__logo {
-    width: 60%;
+.hero__itTakesTwo {
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+}
+.hero__tonyHawkes {
+    background-image: url(../img/tony-hawks-pro-skater-1-2-store-art.jpg);
+}
+.hero__crashBandicoot {
+    background-image: url(../img/crash-bandicoot-4-its-about-time-store-art.jpg);
 }
 
 
+
 /* CARUSEL */
+.carusel--black {
+    background-color: black;
+}
 .carusel__option--trasparent {
     opacity: 0.6;
 }
