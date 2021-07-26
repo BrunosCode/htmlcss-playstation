@@ -34,19 +34,166 @@ a:hover {
 
 /* --- COMPONENTS ---  */
 /* HEADER  */
+.c-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+.c-header__top {
+    text-align: right;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    width: 100%;
+}
 .c-header__logo {
     height: 1rem;
+    margin-right: 1rem;
 }
-.c-header__icon {
-    height: 1.75em;
+.c-header__searchIcon {
+    height: 1.75rem;
+}
+.c-header__bottom {
+    width: 100%;
+    background-color: white;
 }
 
-.dropdown-menu {
-    position: static;
-    width: 100vw;
-    bottom: 0;
-    left: 0;
-    background-color: white;
+
+.c-nav {
+    display: grid;
+    margin: 0 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70px auto auto;
+    grid-template-areas: 
+    "logo burger"
+    "nav-left nav-left"
+    "nav-right nav-right";
+    align-items: center;
+}
+.c-nav__logo {
+    height: 100%;
+    object-fit: contain;
+    grid-area: logo;
+}
+.c-nav__right,
+.c-nav__left {
+    text-align: center;
+    display: none;
+}
+.c-nav__left {
+    grid-area: nav-left;
+}
+.c-nav__right {
+    grid-area: nav-right;
+    margin-bottom: 1rem;
+}
+.c-nav__link {
+    border: none;
+    color: var(--black);
+    background: none;
+    box-shadow: none;
+    font-weight: 500;
+}
+.c-nav__dropdownBtn::after {
+    display: inline;
+    margin-left: .25rem;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f078";
+}
+.c-nav__dropdown {
+    display: none;
+}
+.c-nav__input:checked ~ .c-nav__dropdown {
+    display: flex;
+    flex-direction: column;
+}
+.c-nav__input:checked ~ .c-nav__dropdownBtn:after {
+    content: "\f077";
+}
+.c-nav__icons {
+    border-bottom: 1px solid var(--gray);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.c-nav__icon {
+    width: 4rem;
+    margin-right: .5rem;
+    margin-left: .5rem;
+}
+.c-nav__burger {
+    justify-self: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.75rem;
+    height: 1.75rem;
+    cursor: pointer;
+    grid-area: burger;
+    position: relative;
+}
+.c-nav__burger span{
+    width: 100%;
+    background-color: var(--gray);
+    border-radius: .5rem;
+    height: .25rem;
+    transition: .5s ease-in-out;
+}
+.c-nav__input {
+    display: none;
+}
+.c-nav__input:checked + .c-nav__burger span:nth-of-type(1) {
+    transform-origin: center;
+    transform: translateY(.75rem) rotatez(45deg);
+}
+.c-nav__input:checked + .c-nav__burger span:nth-of-type(2) {
+    transform: rotateZ(-45deg);
+}
+.c-nav__input:checked + .c-nav__burger span:nth-of-type(3) {
+    transform-origin: center;
+    transform: translateY(-.75rem) rotatez(45deg);
+}
+.c-nav__input:checked ~ div {
+    display: block;
+    opacity: 1;
+}
+
+@media screen and (min-width: 772px) {
+    .c-nav {
+        grid-template-columns: 60px 2fr 1fr;
+        grid-template-rows: 70px auto;
+        grid-template-areas: 
+        "logo nav-left nav-right"
+        "dropdown dropdown dropdown";
+        align-items: center;
+    }
+    .c-nav__right,
+    .c-nav__left {
+        width: 100%;
+        display: block;
+        flex-direction: row;
+        align-items: center;
+    }
+    .c-nav__left {
+        justify-content: left;
+        text-align: left;
+    }
+    .c-nav__right {
+        justify-content: right;
+        text-align: right;
+        margin-bottom: 0;
+    }
+    .c-nav__dropdown {
+        grid-area: dropdown;
+    }
+    .c-nav__burger {
+        display: none;
+    }
 }
 
 /* HERO SECTION  */
@@ -160,13 +307,6 @@ a:hover {
 }
 
 /* FOOTER  */
-.c-footer__list {
-    list-style: none;
-    margin: 0;
-}
-.c-footer__list > * {
-    margin: .25rem 0;
-}
 .c-footer__logo {
     height: 5rem;
     width: auto;
@@ -174,6 +314,9 @@ a:hover {
 .c-footer__smallIcon {
     width: 1.5rem;
     margin-right: .5rem;
+}
+.c-footer__link {
+    margin-bottom: .5rem
 }
 
 /* BUTTON  */
@@ -285,6 +428,14 @@ a:hover {
 }
 .h-bg--pureBlack {
     background-color: var(--pureblack);
+}
+
+/* LIST  */
+.h-decoration--none {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* SHOW BLOCK AT MD */
