@@ -175,9 +175,13 @@ a:hover {
 }
 .c-radio__label--trasparent {
     opacity: .5;
+    text-align: center;
 }
 .c-radio__label--trasparent:hover {
     opacity: 1;
+}
+.c-radio__label--trasparent > * {
+    margin-bottom: 1rem;
 }
 .c-radio__input:checked + .c-radio__label--trasparent{
     opacity: 1;
@@ -199,5 +203,25 @@ a:hover {
     .c-radio {
         padding-top: 2rem;
         padding-bottom: 2rem;
+    }
+}
+
+/* CARD  */
+.c-card {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+*[class^=c-card__] {
+    margin-bottom: .5rem;
+}
+*[class^=c-card__]:last-child {
+    margin-bottom: 0;
+}
+.c-card--center {
+    text-align: center;
+}
+@media screen and (min-width: 992px) {
+    .c-card {
+        margin-bottom: 2rem;
     }
 }
