@@ -165,13 +165,13 @@ a:hover {
 /* RADIO SELECTION  */
 .c-radio {
     position: relative;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 .c-radio__input {
     position: absolute;
     opacity: 0;
     left: 0;
-    height: 0.1px;
-    width: 0.1px;
 }
 .c-radio__label--trasparent {
     opacity: .5;
@@ -185,8 +185,19 @@ a:hover {
 }
 .c-radio__label--borded {
     padding: .1rem;
+    transition: transform .5s;
+}
+.c-radio__label--borded:hover {
+    transform: translateY(-15%);
 }
 .c-radio__input:checked + .c-radio__label--borded {
     box-shadow: 0px 0px 0px 2px black;
     border-radius: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+    .c-radio {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
 }
