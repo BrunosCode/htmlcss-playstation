@@ -19,22 +19,21 @@ a:hover {
 /* IMAGES  */
 .c-img {
     width: 100%;
-    height: auto;
 }
 .h-img--w100 {
     width: 100%;
 }
-.c-img--small {
+.h-img--small {
     width: 60%;
 }
-.c-img--rounded {
+.h-img--rounded {
     border-radius: 1rem;
 }
-.c-img--logo {
+.h-img--logo {
     height: 5rem;
     width: auto;
 }
-.c-img--smallIcon {
+.h-img--smallIcon {
     width: 1.5rem;
     margin-right: .5rem;
 }
@@ -136,25 +135,31 @@ a:hover {
 
 /* HERO SECTION  */
 .c-hero {
-    padding-top: 10%;
+    position: relative;
+    padding-top: 15%;
     background-color: black;
-    background-size: cover;
-    background-position: center top;
+    box-sizing: border-box;
 }
-.c-hero__returnal {
-    background-image: url(../img/jumbo-bg.png);
+.c-hero__bg {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    position: absolute;
+    opacity: .95;
 }
-.c-hero__ratchet {
-    background-image: url(../img/ratchet-and-clank-rift-apart-keyart.jpg);
+.c-hero__content {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 1.5rem;
 }
-.c-hero__itTakesTwo {
-    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+.c-hero__content > * {
+    margin-bottom: 1rem;
 }
-.c-hero__tonyHawkes {
-    background-image: url(../img/tony-hawks-pro-skater-1-2-store-art.jpg);
-}
-.c-hero__crashBandicoot {
-    background-image: url(../img/crash-bandicoot-4-its-about-time-store-art.jpg);
+.c-hero__logo {
+    width: 60%;
+    margin-bottom: 1rem;
 }
 
 /* RADIO SELECTION  */
