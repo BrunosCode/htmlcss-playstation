@@ -51,9 +51,6 @@ a:hover {
     height: 1rem;
     margin-right: 1rem;
 }
-.c-header__searchIcon {
-    height: 1.75rem;
-}
 .c-header__bottom {
     width: 100%;
     background-color: white;
@@ -90,19 +87,39 @@ a:hover {
     grid-area: nav-right;
     margin-bottom: 1rem;
 }
+.c-nav__right > *,
+.c-nav__left > * {
+    margin-right: .5rem;
+    margin-left: .5rem;
+    margin-bottom: 1rem;
+}
 .c-nav__link {
     border: none;
     color: var(--black);
     background: none;
     box-shadow: none;
     font-weight: 500;
-    margin-right: .5rem;
-    margin-left: .5rem;
-    margin-bottom: 1rem;
+    cursor: pointer;
 }
 .c-nav__link:hover {
     color: var(--lightBlue);
 }
+.c-nav__searchIcon {
+    height: 1.75rem;
+    transition: 1s;
+}
+.c-nav__searchIcon:hover {
+    transform: scale(1.1);
+}
+
+/* HIDDING INPUT */
+.c-nav__input,
+.c-nav__burgerInput {
+    display: none;
+    cursor: pointer;
+}
+
+/* DROPDOWNS SUB MENU  */
 .c-nav__dropdownBtn::after {
     display: inline;
     margin-left: .25rem;
@@ -127,6 +144,8 @@ a:hover {
 .c-nav__input:checked ~ .c-nav__dropdownBtn:after {
     content: "\f077";
 }
+
+/* DROPDOWNS CONTENT  */
 .c-nav__icons {
     border-bottom: 1px solid var(--gray);
     margin-top: 1rem;
@@ -141,6 +160,8 @@ a:hover {
     margin-right: .5rem;
     margin-left: .5rem;
 }
+
+/* BURGER ICON  */
 .c-nav__burger {
     justify-self: end;
     display: flex;
@@ -161,10 +182,6 @@ a:hover {
 }
 .c-nav__burger:hover span{
     background-color: var(--black);
-}
-.c-nav__input,
-.c-nav__burgerInput {
-    display: none;
 }
 .c-nav__burgerInput:checked + .c-nav__burger span:nth-of-type(1) {
     transform-origin: center;
@@ -213,6 +230,15 @@ a:hover {
         justify-content: right;
         text-align: right;
         margin-bottom: 0;
+    }
+    .c-nav__right > *,
+    .c-nav__left > * {
+       margin-bottom: 0;
+    }
+    /* TO HANDLE A ERROR DURING THE RESISE OF THE PAGE  */
+    .c-nav__burgerInput:checked ~ .c-nav__left,
+    .c-nav__burgerInput:checked ~ .c-nav__right {
+        flex-direction: row;
     }
     .c-nav__input:checked ~ .c-nav__dropdown {
         position: absolute;
